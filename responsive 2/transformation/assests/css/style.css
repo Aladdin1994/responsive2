@@ -1,0 +1,57 @@
+/* 
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} */
+body{
+    overflow: hidden;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+ background-color: red;
+position: absolute ;
+right: -400px;
+animation-name: box;
+animation-duration: 2s;
+/* animation-fill-mode: forwards; */
+/* transform: matrix(); */
+ /* transform: skew(20deg); */
+    /* transform: perspective(100px) scaleZ(1.1) ; */ 
+/* 
+    transition: all 1s; */
+    /* transform: rotate(45deg); */
+    /* transform: translate(100px,300px); */
+    /* overflow: hidden; */
+    /* transition-delay: 0.5s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1) */
+
+}
+@keyframes box{
+    from{
+        right:-400px;
+
+    }
+    to{
+         right:100%;
+    }
+}
+/* .box img{
+    transition:all 1s;
+        object-fit: cover;
+        width: 200px;
+    height: 200px;
+} */
+/* .box img :hover{
+    transform: scale(1.4,1.4);
+    /* width:400px;
+    height: 400px;
+    background-color: green;
+ }  */
+
+ /* .box:hover{
+      transform:perspective(100px) scaleZ(1.4) rotateY(45deg)
+ } */
